@@ -201,35 +201,6 @@ input[class^='btn-']:hover {
   margin: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Dosis', sans-serif;
-  line-height: 1.6;
-  background: #fff;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-ul {
-  list-style: none;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
-img {
-  width: 100%;
-}
 
 #logo {
   width: 70px;
@@ -262,26 +233,6 @@ img {
 }
 #main-nav a.current {
   border-color: #ffbc00;
-}
-
-#header-home {
-  background: url('../img/showcase.jpg') no-repeat center right/cover;
-  height: 100vh;
-  color: #fff;
-}
-#header-home .header-content {
-  text-align: center;
-  padding-top: 20%;
-}
-#header-home .header-content h1 {
-  font-size: 4rem;
-  line-height: 1.2;
-}
-
-#header-inner {
-  background: url('../img/showcase.jpg') no-repeat 20% 30% / cover;
-  height: 5.5rem;
-  border: 3px solid #ffbc00;
 }
 
 #home-a .specials {
