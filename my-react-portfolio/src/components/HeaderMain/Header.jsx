@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { HeaderHome, HeaderInner, NavContainer, NavItem } from './Header.styles'
+import { HeaderHome, NavContainer, NavItem } from './Header.styles'
 
-export const Header = () => {
+const Header = () => {
   return (
     <HeaderHome>
       <div className='container'>
@@ -17,16 +16,16 @@ export const Header = () => {
           <h1>
             I Am Nick The
             <span
-              class='txt-type'
+              className='txt-type'
               data-wait='2000'
               data-words='["Software-Dev", "Designer", "Technologist"]'
             ></span>
           </h1>
-          <p class='lead'>
+          <p className='lead'>
             I specialize in full-stack web application development using the
             'MERN' stack.
           </p>
-          <a href='work.html' class='btn-light'>
+          <a href='work.html' className='btn-light'>
             View My Work
           </a>
         </div>
@@ -34,3 +33,5 @@ export const Header = () => {
     </HeaderHome>
   )
 }
+
+export default Header

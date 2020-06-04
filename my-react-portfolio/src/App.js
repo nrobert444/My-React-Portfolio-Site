@@ -1,10 +1,14 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { GlobalStyle } from './global.styles'
-import Header from './components/Header';
+import Header from './components/HeaderMain/Header'
+import { About } from './Pages/About/About'
+import { Work } from './Pages/Work/Work'
+import { Contact } from './Pages/Contact/Contact'
+import { Home } from './Pages/Home/Home'
 import './App.css'
 
-const App = () {
+const App = () => {
   return (
     <Router>
       <GlobalStyle />
