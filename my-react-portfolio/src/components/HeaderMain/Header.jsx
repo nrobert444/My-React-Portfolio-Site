@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { HeaderHome, NavContainer, NavItem } from './Header.styles'
 
 const Header = () => {
@@ -6,7 +7,6 @@ const Header = () => {
     <HeaderHome>
       <div className='container'>
         <NavContainer>
-          <img src='img/logo.png' alt='My Portfolio' id='logo' />
           <NavItem to='/'>Home</NavItem>
           <NavItem to='/about'>About</NavItem>
           <NavItem to='/work'>Work</NavItem>
@@ -25,9 +25,9 @@ const Header = () => {
             I specialize in full-stack web application development using the
             'MERN' stack.
           </p>
-          <a href='work.html' className='btn-light'>
+          <Link to='/work' className='btn-light'>
             View My Work
-          </a>
+          </Link>
         </div>
       </div>
     </HeaderHome>

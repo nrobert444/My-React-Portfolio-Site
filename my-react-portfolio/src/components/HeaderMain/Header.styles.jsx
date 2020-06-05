@@ -6,10 +6,10 @@ export const HeaderHome = styled.header`
   height: 100vh;
   color: #fff;
 
-  &:header-content {
+  & .header-content {
     text-align: center;
     padding-top: 20%;
-    &:h1 {
+    & h1 {
       font-size: 4rem;
       line-height: 1.2;
     }
@@ -24,7 +24,7 @@ export const HeaderHome = styled.header`
 
   @media (max-width: 500px) {
     height: 10rem;
-    border-bottom: 3px solid $main-color;
+    border-bottom: 3px solid #ffbc00;
     background-position: 20% 30%;
 
     & .header-content {
@@ -40,7 +40,7 @@ export const HeaderHome = styled.header`
 
   @media (max-height: 330px) {
     & .header-content {
-      &:h1 {
+      & h1 {
         font-size: 2rem;
       }
     }
@@ -49,7 +49,7 @@ export const HeaderHome = styled.header`
 
 export const NavContainer = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 1rem;
 
   @media (max-width: 500px) {
@@ -70,15 +70,9 @@ export const NavItem = styled(Link)`
   &:hover {
     border-color: #ccc;
   }
-  & .current {
-    border-color: #ffbc00;
-  }
+
   @media (max-width: 500px) {
-    flex-direction: column;
-    align-items: center;
-    &:l1 {
-      padding: 1rem;
-    }
+    padding: 1rem;
   }
 `
 

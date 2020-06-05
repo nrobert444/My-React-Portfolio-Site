@@ -7,7 +7,6 @@ const HeaderSub = () => {
     <HeaderInner>
       <div className='container'>
         <NavContainer>
-          <img src='img/logo.png' alt='My Portfolio' id='logo' />
           <NavItem to='/'>Home</NavItem>
           <NavItem to='/about'>About</NavItem>
           <NavItem to='/work'>Work</NavItem>

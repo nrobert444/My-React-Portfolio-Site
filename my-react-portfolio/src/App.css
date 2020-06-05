@@ -209,31 +209,6 @@ input[class^='btn-']:hover {
   text-transform: uppercase;
 }
 
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-}
-#main-nav ul {
-  display: flex;
-}
-#main-nav li {
-  padding: 1rem 1.5rem;
-}
-#main-nav a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  border-bottom: 3px transparent solid;
-  padding-bottom: 0.5rem;
-  transition: border-color 0.5s;
-}
-#main-nav a:hover {
-  border-color: #ccc;
-}
-#main-nav a.current {
-  border-color: #ffbc00;
-}
 
 #home-a .specials {
   margin-top: 3 rem;
@@ -394,7 +369,7 @@ input[class^='btn-']:hover {
   margin-right: 0.5rem;
 }
 
-#contact-a .text-fields {
+/* #contact-a .text-fields {
   display: grid;
   grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
@@ -433,7 +408,7 @@ input[class^='btn-']:hover {
 #contact-c h1 {
   text-align: center;
   font-size: 4rem;
-}
+} */
 
 #main-footer {
   background: #333;
