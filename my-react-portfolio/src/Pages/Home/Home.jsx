@@ -3,7 +3,16 @@ import Header from '../../components/HeaderMain/Header'
 import { Footer } from '../../components/Footer/Footer'
 import { HomeA, HomeB, HomeC } from './Home.styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileAlt, faDesktop, faObjectUngroup, faThumbsUp, faUsers, faHourglassStart, faAward, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
+import {
+  faFileAlt,
+  faDesktop,
+  faObjectUngroup,
+  faThumbsUp,
+  faUsers,
+  faHourglassStart,
+  faAward,
+  faCodeBranch
+} from '@fortawesome/free-solid-svg-icons'
 
 export const Home = () => {
   return (
@@ -20,22 +29,22 @@ export const Home = () => {
         </p>
         <div className='specials'>
           <div>
-            <FontAwesomeIcon icon={faFileAlt} />
+            <FontAwesomeIcon className='fas fa-2x' icon={faFileAlt} />
             <h3>Concepting</h3>
             <p>Some content goes here.</p>
           </div>
           <div>
-            <FontAwesomeIcon icon={faDesktop}/>
+            <FontAwesomeIcon className='fas fa-2x' icon={faDesktop} />
             <h3>UI/UX</h3>
             <p>Some content goes here.</p>
           </div>
           <div>
-            <FontAwesomeIcon icon={faObjectUngroup}/>
+            <FontAwesomeIcon className='fas fa-2x' icon={faObjectUngroup} />
             <h3>Design</h3>
             <p>Some content goes here.</p>
           </div>
           <div>
-            <FontAwesomeIcon icon={faThumbsUp}/>
+            <FontAwesomeIcon className='fas fa-2x' icon={faThumbsUp} />
             <h3>Interaction</h3>
             <p>Some content goes here.</p>
           </div>
@@ -46,7 +55,7 @@ export const Home = () => {
         <div className='stats'>
           <div>
             <ul>
-              <li>
+              <li className='fa-2x'>
                 <FontAwesomeIcon icon={faUsers} />
               </li>
               <li className='stats-title'>Clients</li>
@@ -55,8 +64,8 @@ export const Home = () => {
           </div>
           <div>
             <ul>
-              <li>
-                <FontAwesomeIcon icon={faAward}/>
+              <li className='fa-2x'>
+                <FontAwesomeIcon icon={faAward} />
               </li>
               <li className='stats-title'>Awards</li>
               <li className='stats-number'>3</li>
@@ -64,8 +73,8 @@ export const Home = () => {
           </div>
           <div>
             <ul>
-              <li>
-                <FontAwesomeIcon icon={faHourglassStart}/>
+              <li className='fa-2x'>
+                <FontAwesomeIcon icon={faHourglassStart} />
               </li>
               <li className='stats-title'>Hours Worked</li>
               <li className='stats-number'>800</li>
@@ -73,8 +82,8 @@ export const Home = () => {
           </div>
           <div>
             <ul>
-              <li>
-                <FontAwesomeIcon icon= {faCodeBranch}/>
+              <li className='fa-2x'>
+                <FontAwesomeIcon icon={faCodeBranch} />
               </li>
               <li className='stats-title'>Projects Completed</li>
               <li className='stats-number'>25</li>
@@ -93,19 +102,21 @@ export const Home = () => {
           </p>
           <div className='process'>
             <div>
-              <i className='fas fa-file-alt fa-4x process-icon my-2'>
+              <div className='fas fa-4x process-icon my-2'>
+                <FontAwesomeIcon icon={faFileAlt} />
                 <div className='process-step'>1</div>
-              </i>
-              <h3>Discuss the project</h3>
+              </div>
+                <h3>Discuss the project</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
                 numquam minus accusamus porro dicta ducimus.
               </p>
             </div>
             <div>
-              <i className='fas fa-desktop fa-4x process-icon my-2'>
+              <div className=' fas fa-4x process-icon my-2'>
+                <FontAwesomeIcon icon={faDesktop} />
                 <div className='process-step'>2</div>
-              </i>
+              </div>
               <h3>Brainstorming ^ Concepts</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
@@ -113,9 +124,10 @@ export const Home = () => {
               </p>
             </div>
             <div>
-              <i className='fas fa-object-ungroup fa-4x process-icon my-2'>
-                <div className='process-step'>3</div>
-              </i>
+              <div className='fas fa-4x process-icon my-2'>
+                <FontAwesomeIcon icon={faObjectUngroup} />
+                <div className='process-step'>2</div>
+              </div>
               <h3>UI/UX Planning</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
@@ -123,9 +135,10 @@ export const Home = () => {
               </p>
             </div>
             <div>
-              <i className='fas fa-thumbs-up fa-4x process-icon my-2'>
-                <div className='process-step'>4</div>
-              </i>
+              <div className='fas fa-4x process-icon my-2'>
+                <FontAwesomeIcon icon={faThumbsUp} />
+                <div className='process-step'>2</div>
+              </div>
               <h3>Interaction</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui

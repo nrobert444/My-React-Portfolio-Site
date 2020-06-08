@@ -7,6 +7,19 @@ export const HomeA = styled.section`
     grid-gap: 1 rem;
     grid-template-columns: repeat(4, 1fr);
 
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      .specials div {
+        border-bottom: 1px solid $light-color;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
     .fas {
       color: #ffbc00;
       padding-bottom: 0.4rem;
@@ -18,15 +31,21 @@ export const HomeB = styled.section`
   .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
 
-    & li {
+    li {
       line-height: 2rem;
 
-      & .stats.title {
+      &.stats-title {
         font-size: 1.5rem;
       }
 
-      & .stats.number {
+      &.stats-number {
         font-size: 2rem;
         font-weight: bold;
       }
@@ -50,7 +69,11 @@ export const HomeC = styled.section`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
-    text-align: center;
+    text-align: left;
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
 
     &-step {
       position: absolute;
@@ -58,7 +81,7 @@ export const HomeC = styled.section`
       right: 0;
       font-size: 28px;
       background: #ffbc00;
-      color: set-text-color(#ffbc00);
+      color: #333;
       border-radius: 50%;
       height: 15px;
       width: 15px;
@@ -69,8 +92,8 @@ export const HomeC = styled.section`
 
     &-icon {
       border-radius: 50%;
-      background: $dark-color;
-      color: set-text-color(#333);
+      background: #333;
+      color: #fff;
       padding: 2rem;
       width: 70px;
       height: 70px;
@@ -87,7 +110,7 @@ export const HomeC = styled.section`
 
         .process-step {
           background: #333;
-          color: set-text-color(#333);
+          color: #ffbc00;
         }
       }
     }
