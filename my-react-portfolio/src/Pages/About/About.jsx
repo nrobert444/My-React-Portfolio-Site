@@ -16,7 +16,7 @@ export const About = () => {
             Let me tell you a little about myself and what I do...
           </p>
           <div class='about-info'>
-            <img src='img/about.jpg' alt='' class='bio-image' />
+            <img src='img/about-pic.jpg' alt='' class='bio-image' />
             <div class='bio bg-light'>
               <h4>Your Project Is In Safe Hands</h4>
               <p>
@@ -92,7 +92,7 @@ export const About = () => {
       </AboutB>
 
       {/* <!-- Section C: logo --> */}
-
+{/* 
       <AboutC class='py-4 bg-light'>
         <div class='container'>
           <div class='about-logos'>
@@ -102,7 +102,7 @@ export const About = () => {
             <img src='img/about-logos/logo-wordpress.png' alt='' />
           </div>
         </div>
-      </AboutC>
+      </AboutC> */}
 
       {/* <!-- Section D: Testimonials --> */}
       <AboutD class='py-4'>

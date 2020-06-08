@@ -68,17 +68,17 @@ export const ContactPage = () => {
         <div className='container'>
           <div className='contact-info'>
             <div>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon className='fa-2x' icon={faEnvelope} />
               <h3>Email</h3>
               <p>Nick@gmail.com</p>
             </div>
             <div>
-              <FontAwesomeIcon icon={faPhone} />
+              <FontAwesomeIcon className='fa-2x' icon={faPhone} />
               <h3>Phone Number</h3>
               <p>(843)-209-7711</p>
             </div>
             <div>
-              <FontAwesomeIcon icon={faAddressCard} />
+              <FontAwesomeIcon className='fa-2x' icon={faAddressCard} />
               <h3>Address</h3>
               <p>5845 NE Hoyt St. Portland, OR</p>
             </div>
