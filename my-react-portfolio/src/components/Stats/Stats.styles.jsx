@@ -1,6 +1,6 @@
+import styled from 'styled-components'
 
-
-export const Stats = styled.section`
+export const StatsStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   @media (max-width: 500px) {
@@ -35,4 +35,3 @@ export const Stats = styled.section`
     }
   }
 `
-

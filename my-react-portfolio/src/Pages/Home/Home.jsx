@@ -1,153 +1,50 @@
 import React from 'react'
 import Header from '../../components/HeaderMain/Header'
 import { Footer } from '../../components/Footer/Footer'
-import { HomeA, HomeB, HomeC } from './Home.styles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Container } from '../../components/Container/Container'
+import { Specialties } from '../../components/Specialties/Specialties';
+import { Process } from '../../components/Process/process'
+import { Stats } from '../../components/Stats/Stats'
+
 import {
-  faFileAlt,
-  faDesktop,
-  faObjectUngroup,
-  faThumbsUp,
-  faUsers,
-  faHourglassStart,
-  faAward,
-  faCodeBranch
-} from '@fortawesome/free-solid-svg-icons'
+  BottomLine,
+  SectionTitle,
+  Lead,
+  FormattedSection
+} from '../../components/Container/Container.style'
+
 
 export const Home = () => {
   return (
     <div>
       <Header />
-
-      <HomeA className='text-center py-2'>
-        <div className='container'>
-          <h2 className='section-title'>I Specialize In</h2>
-          <div className='bottom-line'></div>
-        </div>
-        <p className='lead'>
+      <FormattedSection>
+        <Container>
+          <SectionTitle>I Specialize In</SectionTitle>
+          <BottomLine />
+        </Container>
+        <Lead>
           Full-stack Software development. Add more content.
-        </p>
-        <div className='specials'>
-          <div>
-            <FontAwesomeIcon className='fas fa-2x' icon={faFileAlt} />
-            <h3>Concepting</h3>
-            <p>Some content goes here.</p>
-          </div>
-          <div>
-            <FontAwesomeIcon className='fas fa-2x' icon={faDesktop} />
-            <h3>UI/UX</h3>
-            <p>Some content goes here.</p>
-          </div>
-          <div>
-            <FontAwesomeIcon className='fas fa-2x' icon={faObjectUngroup} />
-            <h3>Design</h3>
-            <p>Some content goes here.</p>
-          </div>
-          <div>
-            <FontAwesomeIcon className='fas fa-2x' icon={faThumbsUp} />
-            <h3>Interaction</h3>
-            <p>Some content goes here.</p>
-          </div>
-        </div>
-      </HomeA>
+        </Lead>
+        <Specialties/>
+      </FormattedSection>
 
-      <HomeB className='text-center py-2'>
-        <div className='stats'>
-          <div>
-            <ul>
-              <li className='fa-2x'>
-                <FontAwesomeIcon icon={faUsers} />
-              </li>
-              <li className='stats-title'>Clients</li>
-              <li className='stats-number'>100</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li className='fa-2x'>
-                <FontAwesomeIcon icon={faAward} />
-              </li>
-              <li className='stats-title'>Awards</li>
-              <li className='stats-number'>3</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li className='fa-2x'>
-                <FontAwesomeIcon icon={faHourglassStart} />
-              </li>
-              <li className='stats-title'>Hours Worked</li>
-              <li className='stats-number'>800</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li className='fa-2x'>
-                <FontAwesomeIcon icon={faCodeBranch} />
-              </li>
-              <li className='stats-title'>Projects Completed</li>
-              <li className='stats-number'>25</li>
-            </ul>
-          </div>
-        </div>
-      </HomeB>
+      <FormattedSection>
+        <Stats/>
+        
+      </FormattedSection>
 
-      <HomeC className='text-center py-2'>
-        <div className='container'>
-          <h2 className='section-title'>My Creative Process</h2>
-          <div className='bottom-line'></div>
-          <p className='lead'>
+      <FormattedSection>
+        <Container>
+          <SectionTitle>I Specialize In</SectionTitle>
+          <BottomLine />
+          <Lead>
             All of my UI/UX and design projects are based off of a practiced
             formula to get the result that I am looking for.
-          </p>
-          <div className='process'>
-            <div>
-              <div className='fas fa-4x process-icon my-2'>
-                <FontAwesomeIcon icon={faFileAlt} />
-                <div className='process-step'>1</div>
-              </div>
-                <h3>Discuss the project</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                numquam minus accusamus porro dicta ducimus.
-              </p>
-            </div>
-            <div>
-              <div className=' fas fa-4x process-icon my-2'>
-                <FontAwesomeIcon icon={faDesktop} />
-                <div className='process-step'>2</div>
-              </div>
-              <h3>Brainstorming ^ Concepts</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                numquam minus accusamus porro dicta ducimus.
-              </p>
-            </div>
-            <div>
-              <div className='fas fa-4x process-icon my-2'>
-                <FontAwesomeIcon icon={faObjectUngroup} />
-                <div className='process-step'>2</div>
-              </div>
-              <h3>UI/UX Planning</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                numquam minus accusamus porro dicta ducimus.
-              </p>
-            </div>
-            <div>
-              <div className='fas fa-4x process-icon my-2'>
-                <FontAwesomeIcon icon={faThumbsUp} />
-                <div className='process-step'>2</div>
-              </div>
-              <h3>Interaction</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-                numquam minus accusamus porro dicta ducimus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </HomeC>
+          </Lead>
+          <Process />
+        </Container>
+      </FormattedSection>
       <Footer />
     </div>
   )

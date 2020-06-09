@@ -14,7 +14,7 @@ const Header = () => {
         </NavContainer>{' '}
         <div className='header-content'>
           <h1>
-            I Am Nick The
+            Nick Roberto
             <span
               className='txt-type'
               data-wait='2000'
