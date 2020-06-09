@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { HeaderHome, NavContainer, NavItem } from './Header.styles'
+import Typical from 'react-typical'
+import { Lead } from '../Container/Container.style'
+import { Container } from '../Container/Container'
 
 const Header = () => {
   return (
     <HeaderHome>
-      <div className='container'>
+      <Container>
         <NavContainer>
           <NavItem to='/'>Home</NavItem>
           <NavItem to='/about'>About</NavItem>
@@ -13,23 +16,38 @@ const Header = () => {
           <NavItem to='/contact'>Contact</NavItem>
         </NavContainer>{' '}
         <div className='header-content'>
-          <h1>
-            Nick Roberto
-            <span
-              className='txt-type'
-              data-wait='2000'
-              data-words='["Software-Dev", "Designer", "Technologist"]'
-            ></span>
-          </h1>
-          <p className='lead'>
+          <h1>Nick Roberto </h1>
+          <Lead>
+            {' '}
+            <Typical
+              loop={Infinity}
+              wrapper='b'
+              steps={[
+                'Software Developer',
+                2000,
+                'Technologist',
+                2000,
+                'Business Owner',
+                2000,
+                'Father',
+                2000,
+                'Husband',
+                2000,
+                'Film Fanatic',
+                2000
+              ]}
+            />
+          </Lead>
+
+          <Lead>
             I specialize in full-stack web application development using the
             'MERN' stack.
-          </p>
+          </Lead>
           <Link to='/work' className='btn-light'>
             View My Work
           </Link>
         </div>
-      </div>
+      </Container>
     </HeaderHome>
   )
 }

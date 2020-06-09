@@ -51,17 +51,15 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: flex-start;
   padding-top: 1rem;
-
+/* 
   @media (max-width: 500px) {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-  }
+  } */
 `
 
 export const NavItem = styled(Link)`
-  display: flex;
   padding: 1rem 1.5rem;
-  text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   border-bottom: 3px transparent solid;
