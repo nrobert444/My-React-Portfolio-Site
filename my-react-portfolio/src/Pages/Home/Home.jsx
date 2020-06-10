@@ -22,7 +22,9 @@ export const Home = () => {
           <SectionTitle>I Specialize In</SectionTitle>
           <BottomLine />
         </Container>
-        <Lead>Full-stack Software development. Add more content.</Lead>
+        <Lead>
+          Full-stack Software development with a focus on front-end technologies
+        </Lead>
         <Specialties />
       </FormattedSection>
 

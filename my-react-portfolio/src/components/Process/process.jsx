@@ -5,7 +5,7 @@ import {
   faFileAlt,
   faDesktop,
   faObjectUngroup,
-  faThumbsUp,
+  faThumbsUp
 } from '@fortawesome/free-solid-svg-icons'
 
 export const Process = () => {

@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 
-export const AboutTechStyles = styled.div`
-  overflow: hidden;
-  height: 20px;
-  width: 500px;
-  background: #ccc;
-  border-radius: 5px;
-  margin-bottom: 0.6rem;
+export const TechGrid = styled.section`
+  display: grid;
+  grid-template-areas: 'AboutTechStyles TechLogosContainer';
+  grid-gap: 1.2rem;
+`
 
-  div {
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    background: #ffbc00;
-  }
+export const Buffer = styled.div`
+  height: 100px;
+  width: 100%;
+  background: #f4f4f4;
 `

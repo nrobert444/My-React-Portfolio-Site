@@ -14,13 +14,15 @@ export const Specialties = () => {
     <Specialize>
       <div>
         <FontAwesomeIcon className='fas fa-2x' icon={faFileAlt} />
-        <h3>Concepting</h3>
-        <p>Some content goes here.</p>
+        <h3>Problem Solving</h3>
+        <p>
+          Finding creative solutions through the medium of software development
+        </p>
       </div>
       <div>
         <FontAwesomeIcon className='fas fa-2x' icon={faDesktop} />
-        <h3>UI/UX</h3>
-        <p>Some content goes here.</p>
+        <h3>Collaborative Develpment</h3>
+        <p>Working within a team to achieve a shared objective and learn from others.</p>
       </div>
       <div>
         <FontAwesomeIcon className='fas fa-2x' icon={faObjectUngroup} />
