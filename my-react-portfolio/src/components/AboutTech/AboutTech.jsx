@@ -13,7 +13,7 @@ export const AboutTech = () => {
     <div>
       <section className='bg-dark py-3'>
         <Container>
-          <SectionTitle></SectionTitle>
+          <SectionTitle>Technologies</SectionTitle>
           <BottomLine />
           <h4>React :</h4>
           <AboutTechStyles>
@@ -26,8 +26,12 @@ export const AboutTech = () => {
             <div>
               {' '}
               <Typical
+                loop={Infinity}
                 wrapper='b'
-                steps={['Recursion, OOP, Functional Programming, Merge Sort']}
+                steps={[
+                  'Recursion, OOP, Functional Programming, Merge Sort',
+                  5000
+                ]}
               />
             </div>
           </AboutTechStyles>
