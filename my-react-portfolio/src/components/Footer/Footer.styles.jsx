@@ -38,3 +38,5 @@ export const FooterContent = styled.div`
     height: 5rem;
   }
 `
+
+

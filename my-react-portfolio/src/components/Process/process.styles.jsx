@@ -45,8 +45,8 @@ export const ProcessIcon = styled.div`
 
   &:hover {
     background: #ffbc00;
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
   }
 `

@@ -8,7 +8,10 @@ export const TechSkillContainer = () => {
       <h4>React :</h4>
       <AboutTechStyles>
         <div>
-          <Typical wrapper='b' steps={['Redux, Context API, FireBase']} />
+          <Typical
+            wrapper='b'
+            steps={['Redux, Context API, FireBase, Hooks']}
+          />
         </div>
       </AboutTechStyles>
       <h4>JavaScript :</h4>
@@ -16,9 +19,8 @@ export const TechSkillContainer = () => {
         <div>
           {' '}
           <Typical
-            loop={Infinity}
             wrapper='b'
-            steps={['Recursion, OOP, Functional Programming, Merge Sort', 5000]}
+            steps={['Recursion, OOP, Functional Programming, Merge Sort']}
           />
         </div>
       </AboutTechStyles>
@@ -58,7 +60,6 @@ export const TechSkillContainer = () => {
         <div>
           {' '}
           <Typical
-            loop={Infinity}
             wrapper='b'
             steps={['Data Shaping, Querying, Auth, Virtuals', 5000]}
           />

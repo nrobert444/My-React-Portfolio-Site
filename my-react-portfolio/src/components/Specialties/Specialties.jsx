@@ -8,6 +8,7 @@ import {
   faObjectUngroup,
   faThumbsUp
 } from '@fortawesome/free-solid-svg-icons'
+import { CSSTransition } from 'react-transition-group'
 
 export const Specialties = () => {
   return (
@@ -19,10 +20,14 @@ export const Specialties = () => {
           Finding creative solutions through the medium of software development
         </p>
       </div>
+
       <div>
         <FontAwesomeIcon className='fas fa-2x' icon={faDesktop} />
         <h3>Collaborative Develpment</h3>
-        <p>Working within a team to achieve a shared objective and learn from others.</p>
+        <p>
+          Working within a team to achieve a shared objective and learn from
+          others.
+        </p>
       </div>
       <div>
         <FontAwesomeIcon className='fas fa-2x' icon={faObjectUngroup} />

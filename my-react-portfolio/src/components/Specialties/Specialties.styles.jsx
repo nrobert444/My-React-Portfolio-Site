@@ -6,6 +6,7 @@ export const Specialize = styled.div`
   grid-gap: 1 rem;
   grid-template-columns: repeat(4, 1fr);
 
+
   @media (max-width: 500px) {
     grid-template-columns: 1fr;
     .specials div {

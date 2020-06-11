@@ -5,8 +5,7 @@ import { TechLogoContainer } from '../TechLogoContainer/TechLogoContainer'
 import { TechSkillContainer } from '../TechSkillContainer/TechSkillContainer'
 import {
   BottomLine,
-  SectionTitle,
-  Lead
+  SectionTitle
 } from '../../components/Container/Container.style'
 
 export const AboutTech = () => {

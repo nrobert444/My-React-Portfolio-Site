@@ -7,7 +7,7 @@ export const TechGrid = styled.section`
 `
 
 export const Buffer = styled.div`
-  height: 100px;
+  height: 30px;
   width: 100%;
   background: #f4f4f4;
 `
