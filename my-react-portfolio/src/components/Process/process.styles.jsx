@@ -5,7 +5,8 @@ export const ProcessContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   text-align: left;
-  @media (max-width: 500px) {
+
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -19,6 +20,7 @@ export const ProcessStep = styled.div`
   background: #ffbc00;
   color: #333;
   border-radius: 50%;
+  border: 1px solid lightyellow;
   height: 15px;
   width: 15px;
   line-height: 15px;
@@ -31,6 +33,10 @@ export const ProcessStep = styled.div`
   }
 `
 
+export const WordContainer = styled.div`
+  padding: 2rem;
+`
+
 export const ProcessIcon = styled.div`
   border-radius: 50%;
   background: #333;
@@ -38,6 +44,7 @@ export const ProcessIcon = styled.div`
   padding: 2rem;
   width: 70px;
   height: 70px;
+  margin: auto;
   line-height: 70px;
   text-align: center;
   position: relative;
