@@ -51,14 +51,6 @@ export const TechLogoContainer = () => {
       <Icon>
         <ImageContainer>
           <img
-            src='https://res.cloudinary.com/dmtn5fbdu/image/upload/v1574722823/Portfolio/Tech-logos/netlify.png'
-            alt='logo'
-          />
-        </ImageContainer>
-      </Icon>
-      <Icon>
-        <ImageContainer>
-          <img
             src='https://res.cloudinary.com/dmtn5fbdu/image/upload/v1574722823/Portfolio/Tech-logos/nodejs-new-pantone-black.png'
             alt='logo'
           />
@@ -68,14 +60,6 @@ export const TechLogoContainer = () => {
         <ImageContainer>
           <img
             src='https://res.cloudinary.com/dmtn5fbdu/image/upload/v1574722823/Portfolio/Tech-logos/javascript.png'
-            alt='logo'
-          />
-        </ImageContainer>
-      </Icon>
-      <Icon>
-        <ImageContainer>
-          <img
-            src='https://res.cloudinary.com/dmtn5fbdu/image/upload/v1574722823/Portfolio/Tech-logos/firebase.png'
             alt='logo'
           />
         </ImageContainer>

@@ -16,5 +16,5 @@ export const DivideLine = styled.div`
   width: 2px;
   background: #ffbc00;
   display: flex;
-  margin: 1rem auto 0 auto;
+  margin: 3rem auto 0 auto;
 `

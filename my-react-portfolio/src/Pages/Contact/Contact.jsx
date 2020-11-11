@@ -64,15 +64,15 @@ export const ContactPage = () => {
         </div>
       </ContactA>
 
-      <ContactB className='py-3 bg-dark'>
+      <ContactB className='py-3 bg-main'>
         <div className='container'>
           <div className='contact-info'>
             <div>
               <FontAwesomeIcon className='fa-2x' icon={faEnvelope} />
               <h3>Email</h3>
-              <p>Nick@gmail.com</p>
+              <p>n.moonrise.media@gmail.com</p>
             </div>
-            <div>
+            <div className='dark'>
               <FontAwesomeIcon className='fa-2x' icon={faPhone} />
               <h3>Phone Number</h3>
               <p>(843)-209-7711</p>
@@ -85,12 +85,6 @@ export const ContactPage = () => {
           </div>
         </div>
       </ContactB>
-
-      <ContactC className='bg-main py-4'>
-        <div className='container'>
-          <h1>Let's start your next project!</h1>
-        </div>
-      </ContactC>
       <Footer />
     </div>
   )

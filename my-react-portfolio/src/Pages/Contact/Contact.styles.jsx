@@ -54,6 +54,7 @@ export const ContactB = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    color: black;
   }
 
   @media (max-width: 500px) {
