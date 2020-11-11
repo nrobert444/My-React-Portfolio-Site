@@ -38,5 +38,18 @@ export const FooterContent = styled.div`
     height: 5rem;
   }
 `
+export const StyledLink = styled.a`
+  color: white;
+  text-decoration: none;
 
-
+  &:focus,
+  &:hover,
+  &:visited {
+    color: white;
+  }
+  &:link,
+  &:active {
+    text-decoration: none;
+    color: white;
+  }
+`
