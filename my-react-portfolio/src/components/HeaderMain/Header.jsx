@@ -39,10 +39,6 @@ const Header = () => {
             />
           </Lead>
 
-          <Lead>
-            I specialize in full-stack web application development using the
-            'MERN' stack.
-          </Lead>
           <Link to='/work' className='btn-light'>
             View My Work
           </Link>

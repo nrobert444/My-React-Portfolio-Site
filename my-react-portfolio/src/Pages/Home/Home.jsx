@@ -2,9 +2,6 @@ import React from 'react'
 import Header from '../../components/HeaderMain/Header'
 import { Footer } from '../../components/Footer/Footer'
 import { Container } from '../../components/Container/Container'
-import { Specialties } from '../../components/Specialties/Specialties'
-import { Process } from '../../components/Process/process'
-import { Stats } from '../../components/Stats/Stats'
 
 import {
   BottomLine,
@@ -23,25 +20,10 @@ export const Home = () => {
           <BottomLine />
         </Container>
         <Lead>
-          Full-stack Software development with a focus on front-end technologies
+          Full-stack Software development with a focus on front-end
+          technologies. The stack I utilize is MongoDb, Express, NodeJS, and
+          React.
         </Lead>
-        <Specialties />
-      </FormattedSection>
-
-      <FormattedSection>
-        <Stats />
-      </FormattedSection>
-
-      <FormattedSection>
-        <Container>
-          <SectionTitle>Process</SectionTitle>
-          <BottomLine />
-          <Lead>
-            All of my UI/UX and design projects are based off of a practiced
-            formula to get the result that I am looking for.
-          </Lead>
-          <Process />
-        </Container>
       </FormattedSection>
       <Footer />
     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
@@ -7,9 +7,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import HeaderSub from '../../components/HeaderSub/HeaderSub'
 import { Footer } from '../../components/Footer/Footer'
-import { ContactA, ContactB, ContactC } from './Contact.styles'
+import { ContactA, ContactB } from './Contact.styles'
 
 export const ContactPage = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
   return (
     <div>
       <HeaderSub />
@@ -18,7 +23,12 @@ export const ContactPage = () => {
           <h2 className='section-title'>Contact Me</h2>
           <div className='bottom-line'></div>
           <p className='lead'>Here is how you can reach me.</p>
-          <form method='POST' data-netlify='true' data-netlify-recaptcha='true'>
+          <form
+            method='POST'
+            data-netlify='true'
+            data-netlify-recaptcha='true'
+            noValidate
+          >
             <div className='text-fields'>
               <input
                 type='text'
@@ -26,6 +36,9 @@ export const ContactPage = () => {
                 placeholder='Name'
                 autoComplete='off'
                 name='name'
+                value={name}
+                onChange={e => setName({ name: e.target.value })}
+                noValidate
               />
               <input
                 type='text'
@@ -33,6 +46,9 @@ export const ContactPage = () => {
                 placeholder='Subject'
                 autoComplete='off'
                 name='subject'
+                value={subject}
+                onChange={e => setSubject({ subject: e.target.value })}
+                noValidate
               />
               <input
                 type='email'
@@ -40,18 +56,18 @@ export const ContactPage = () => {
                 placeholder='Email Address'
                 autoComplete='off'
                 name='email'
+                value={email}
+                onChange={e => setEmail({ email: e.target.value })}
+                noValidate
               />
-              <input
-                type='text'
-                className='text-input phone-input'
-                placeholder='Phone Number'
-                autoComplete='off'
-                name='phone'
-              />
+
               <textarea
                 className='text-input message-input'
                 placeholder='Enter Message'
                 name='message'
+                value={message}
+                onChange={e => setMessage({ message: e.target.value })}
+                noValidate
               ></textarea>
               <div className='my-2'>
                 <div data-netlify-recaptcha='true'></div>
@@ -75,7 +91,7 @@ export const ContactPage = () => {
             <div className='dark'>
               <FontAwesomeIcon className='fa-2x' icon={faPhone} />
               <h3>Phone Number</h3>
-              <p>(843)-209-7711</p>
+              <p>(843)-209-7713</p>
             </div>
             <div>
               <FontAwesomeIcon className='fa-2x' icon={faAddressCard} />

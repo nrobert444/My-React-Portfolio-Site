@@ -5,7 +5,7 @@ export const ContactA = styled.section`
     display: grid;
     grid-template-areas:
       'name email'
-      'subject phone'
+      'subject subject'
       'message message';
     grid-gap: 1.2rem;
     margin-bottom: 1.2rem;
