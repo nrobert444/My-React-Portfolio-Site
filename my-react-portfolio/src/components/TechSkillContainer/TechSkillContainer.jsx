@@ -8,61 +8,53 @@ export const TechSkillContainer = () => {
       <h4>React :</h4>
       <AboutTechStyles>
         <div>
-          <Typical
-            wrapper='b'
-            steps={['Redux, Context API, FireBase, Hooks']}
-          />
+          <p>
+            <strong>
+              Redux | Context API | Hooks | Class/Functional Components
+            </strong>
+          </p>
         </div>
       </AboutTechStyles>
       <h4>JavaScript :</h4>
       <AboutTechStyles>
         <div>
-          {' '}
-          <Typical
-            wrapper='b'
-            steps={['Recursion, OOP, Functional Programming, Merge Sort']}
-          />
-        </div>
-      </AboutTechStyles>
-      <h4>CSS :</h4>
-      <AboutTechStyles>
-        <div>
-          {' '}
-          <Typical wrapper='b' steps={['SASS, Box-Model, CSS/Grid, FlexBox']} />
+          <p>
+            <strong>OOP | Functional Programming | ES5 | ES6 + </strong>{' '}
+          </p>
         </div>
       </AboutTechStyles>
       <h4>HTML :</h4>
       <AboutTechStyles>
         <div>
-          {' '}
-          <Typical wrapper='b' steps={['HTML5 Semantic HTML']} />
+          <p>
+            <strong>HTML5 Semantic HTML</strong>{' '}
+          </p>
         </div>
       </AboutTechStyles>
-      <h4>Node.js :</h4>
+      <h4>CSS :</h4>
       <AboutTechStyles>
         <div>
-          {' '}
-          <Typical wrapper='b' steps={['Routing, APIs, Auth']} />
+          <p>
+            <strong>SASS | CSS/Grid | FlexBox</strong>{' '}
+          </p>
         </div>
       </AboutTechStyles>
-      <h4>Express :</h4>
+      <h4>Node/Express :</h4>
       <AboutTechStyles>
         <div>
-          {' '}
-          <Typical
-            wrapper='b'
-            steps={['Express Routing, MiddleWare, API Creation']}
-          />
+          <p>
+            <strong>Routing | MiddleWare | REST | Auth</strong>{' '}
+          </p>
         </div>
       </AboutTechStyles>
       <h4>MongoDb / Mongoose :</h4>
       <AboutTechStyles>
         <div>
-          {' '}
-          <Typical
-            wrapper='b'
-            steps={['Data Shaping, Querying, Auth, Virtuals', 5000]}
-          />
+          <p>
+            <strong>
+              Querying | Auth | Virtuals | Schemas | Atlas/Compass
+            </strong>{' '}
+          </p>
         </div>
       </AboutTechStyles>
     </div>

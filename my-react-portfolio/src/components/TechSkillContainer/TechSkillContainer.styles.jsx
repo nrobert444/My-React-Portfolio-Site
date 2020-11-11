@@ -11,7 +11,7 @@ export const AboutTechStyles = styled.div`
   div {
     height: 100%;
     color: black;
-    text-align: left;
+    text-align: center;
     background: #ffbc00;
   }
 `

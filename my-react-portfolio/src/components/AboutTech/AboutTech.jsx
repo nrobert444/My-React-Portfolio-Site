@@ -1,5 +1,5 @@
 import React from 'react'
-import { TechGrid, Buffer } from './AboutTech.styles'
+import { TechGrid, Buffer, DivideLine } from './AboutTech.styles'
 import { Container } from '../../components/Container/Container'
 import { TechLogoContainer } from '../TechLogoContainer/TechLogoContainer'
 import { TechSkillContainer } from '../TechSkillContainer/TechSkillContainer'
@@ -17,6 +17,7 @@ export const AboutTech = () => {
       </Container>
       <TechGrid className='bg-dark py-3'>
         <TechSkillContainer />
+        <DivideLine />
         <TechLogoContainer />
       </TechGrid>
       <Buffer />

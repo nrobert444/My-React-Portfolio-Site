@@ -4,6 +4,7 @@ export const MainFooter = styled.footer`
   background: #333333;
   color: #fff;
   height: 5rem;
+  border-top: 2px solid #ffbc00;
 
   @media (max-width: 500px) {
     height: 7rem;
