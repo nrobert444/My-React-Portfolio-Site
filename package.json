@@ -4,7 +4,8 @@
   "description": "Software dev Portfolio for Nicholas Roberto",
   "main": "index.js",
   "scripts": {
-    "start": "npm start --prefix my-react-portfolio"
+    "start": "npm start --prefix my-react-portfolio",
+    "build": "npm build --prefix my-react-portfolio"
   },
   "repository": {
     "type": "git",
