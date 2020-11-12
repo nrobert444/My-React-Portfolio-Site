@@ -1,10 +1,10 @@
 {
-  "name": "My React Portfolio Site",
+  "name": "nicholas-roberto-portfolio-site",
   "version": "1.0.0",
   "description": "Software dev Portfolio for Nicholas Roberto",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm start --prefix my-react-portfolio"
   },
   "repository": {
     "type": "git",
