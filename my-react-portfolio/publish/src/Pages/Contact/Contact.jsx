@@ -10,7 +10,7 @@ import { Footer } from '../../components/Footer/Footer'
 import { ContactA, ContactB } from './Contact.styles'
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify'
-import './node_modules/react-toastify/dist/ReactToastify.min.css'
+import 'react-toastify/dist/ReactToastify.min.css'
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
