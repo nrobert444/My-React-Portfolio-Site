@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ItemsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 `
 
@@ -52,10 +52,6 @@ export const ItemImage = styled.div`
     height: auto;
     line-height: 0;
   }
-
-  /* &:hover {
-    transform: scale(1.2);
-  } */
 `
 
 export const ItemText = styled.div`

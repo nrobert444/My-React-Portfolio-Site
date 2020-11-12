@@ -5,7 +5,7 @@ import {
   BottomLine,
   SectionTitle,
   Lead
-} from '../../components/Container/Container.style'
+} from '../Container/Container.style'
 
 export const AboutInfo = () => {
   return (

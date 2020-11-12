@@ -1,7 +1,13 @@
 import React from 'react'
 import HeaderSub from '../../components/HeaderSub/HeaderSub'
 import { Footer } from '../../components/Footer/Footer'
-import { ItemsContainer, Item, ItemImage, ItemText, ItemTextWrap } from './Work.styles'
+import {
+  ItemsContainer,
+  Item,
+  ItemImage,
+  ItemText,
+  ItemTextWrap
+} from './Work.styles'
 import { Container } from '../../components/Container/Container'
 import {
   BottomLine,
@@ -26,99 +32,51 @@ export const Work = () => {
               </ItemImage>
               <ItemText>
                 <ItemTextWrap>
-                  <p className='item-text-category'>Design</p>
-                  <h2 className='item-text-title'>Great Gradients</h2>
+                  <p className='item-text-category'>Full-Stack App</p>
+                  <h2 className='item-text-title'>Moonrise Ecommerce Store</h2>
                 </ItemTextWrap>
               </ItemText>
             </Item>
+            <lead>
+              Ecommerce platform built with React using Hooks, MongoDb,
+              Node/Express and dependencies such as react helmet.
+            </lead>
             <Item>
               <ItemImage>
-                <img src='img/items/item2.png' alt='' />
+                <img src='img/items/item1.png' alt='' />
               </ItemImage>
               <ItemText>
                 <ItemTextWrap>
-                  <p className='item-text-category'>UI/UX</p>
-                  <h2 className='item-text-title'>World Experience</h2>
+                  <p className='item-text-category'>Full-Stack App</p>
+                  <h2 className='item-text-title'>Moonrise Ecommerce Store</h2>
                 </ItemTextWrap>
               </ItemText>
             </Item>
+            <lead>
+              Ecommerce platform built with React using Hooks, MongoDb,
+              Node/Express and dependencies such as react helmet.
+            </lead>
             <Item>
               <ItemImage>
-                <img src='img/items/item3.png' alt='' />
+                <img src='img/items/item1.png' alt='' />
               </ItemImage>
               <ItemText>
                 <ItemTextWrap>
-                  <p className='item-text-category'>Photography & Design</p>
-                  <h2 className='item-text-title'>Vanishing</h2>
+                  <p className='item-text-category'>Full-Stack App</p>
+                  <h2 className='item-text-title'>Moonrise Ecommerce Store</h2>
                 </ItemTextWrap>
               </ItemText>
             </Item>
-            <Item>
-              <ItemImage>
-                <img src='img/items/item4.png' alt='' />
-              </ItemImage>
-              <ItemText>
-                <ItemTextWrap>
-                  <p className='item-text-category'>Design</p>
-                  <h2 className='item-text-title'>Gap INC</h2>
-                </ItemTextWrap>
-              </ItemText>
-            </Item>
-            <Item>
-              <ItemImage>
-                <img src='img/items/item5.png' alt='' />
-              </ItemImage>
-              <ItemText>
-                <ItemTextWrap>
-                  <p className='item-text-category'>Mobile UI Design</p>
-                  <h2 className='item-text-title'>Face THe Experience</h2>
-                </ItemTextWrap>
-              </ItemText>
-            </Item>
-            <Item>
-              <ItemImage>
-                <img src='img/items/item6.png' alt='' />
-              </ItemImage>
-              <ItemText>
-                <ItemTextWrap>
-                  <p className='item-text-category'>Design Concept</p>
-                  <h2 className='item-text-title'>Bezier Curves</h2>
-                </ItemTextWrap>
-              </ItemText>
-            </Item>
-            <Item>
-              <ItemImage>
-                <img src='img/items/item7.png' alt='' />
-              </ItemImage>
-              <ItemText>
-                <ItemTextWrap>
-                  <p className='item-text-category'>Photography</p>
-                  <h2 className='item-text-title'>Dock Ponder</h2>
-                </ItemTextWrap>
-              </ItemText>
-            </Item>
-            <Item>
-              <ItemImage>
-                <img src='img/items/item8.png' alt='' />
-              </ItemImage>
-              <ItemText>
-                <ItemTextWrap>
-                  <p className='item-text-category'>Web Applications</p>
-                  <h2 className='item-text-title'>Restaurant App</h2>
-                </ItemTextWrap>
-              </ItemText>
-            </Item>
-            <Item>
-              <ItemImage>
-                <img src='img/items/item9.png' alt='' />
-              </ItemImage>
-              <ItemText>
-                <ItemTextWrap>
-                  <p className='item-text-category'>Social Network Concept</p>
-                  <h2 className='item-text-title'>FriendFeed</h2>
-                </ItemTextWrap>
-              </ItemText>
-            </Item>
+            <lead>
+              Ecommerce platform built with React using Hooks, MongoDb,
+              Node/Express and dependencies such as react helmet.
+              <a href='/work' className='btn-light'>
+                Github
+              </a>
+              <a href='/work' className='btn-light'>
+                Live Site
+              </a>
+            </lead>
           </ItemsContainer>
         </Container>
       </section>

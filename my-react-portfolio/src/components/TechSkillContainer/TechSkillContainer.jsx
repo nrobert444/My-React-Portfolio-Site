@@ -1,6 +1,5 @@
 import React from 'react'
 import { AboutTechStyles } from './TechSkillContainer.styles'
-import Typical from 'react-typical'
 
 export const TechSkillContainer = () => {
   return (
