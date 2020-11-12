@@ -9,6 +9,8 @@ import HeaderSub from '../../components/HeaderSub/HeaderSub'
 import { Footer } from '../../components/Footer/Footer'
 import { ContactA, ContactB } from './Contact.styles'
 import emailjs from 'emailjs-com'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -44,6 +46,30 @@ export class ContactPage extends Component {
       }
     }
   }
+
+  toastifySuccess() {
+    toast.success('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: 'submit-feedback success'
+    })
+  }
+
+  toastifyFail() {
+    toast.error('Form failed to send!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: 'submit-feedback fail'
+    })
+  }
   handleSubmit = e => {
     e.preventDefault()
 
@@ -71,9 +97,11 @@ export class ContactPage extends Component {
         Message: ${message}
       `)
 
+      this.toastifySuccess()
       this.resetForm()
     } else {
       console.error('FORM INVALID - DISPLAY ERROR MESSAGE')
+      this.toastifyFail()
     }
   }
 
@@ -189,6 +217,7 @@ export class ContactPage extends Component {
                 Submit
               </button>
             </form>
+            <ToastContainer />
           </div>
         </ContactA>
 
